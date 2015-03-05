@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="@string/username"
+        android:id="@+id/prompt"
+        android:layout_width="0dp"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>Text
+
+<EditText
+    android:layout_width="0dp"
+    android:layout_weight="75"
+    android:layout_height="wrap_content"
+    android:hint="@string/enterusername"
+    android:layout_toRightOf="@id/prompt"
+    android:id="@+id/pleaseenter"
+    />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:text="@string/password"
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>Text
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="75"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterpassword"
+        android:layout_toRightOf="@id/prompt"
+       />
+
+
+</LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
